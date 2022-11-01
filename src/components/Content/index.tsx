@@ -12,20 +12,22 @@ const Content:React.FC = () => {
           <img src={imageUrl} alt="" style={{ width: 350, height: 350 }} />
         </ImageContainer>
       </CardImage>
-      <Row>
-        <CardImage>
-          <Badge position='left' size={45} style={{ bottom: 40, left: 25 }} />
-          <ImageContainer>
-            <img src={imageUrl} alt="" />
-          </ImageContainer>
-        </CardImage>
-        <CardImage>
-          <Badge position='right' size={55} style={{ right: -285, bottom: -40 }} />
-          <ImageContainer>
-            <img src={imageUrl} alt="" />
-          </ImageContainer>
-        </CardImage>
-      </Row>
+      <div style={{ display: 'flex', justifyContent: 'space-around', flex: 1, marginRight: 80, marginLeft: 80 }}>
+        <Row>
+          <CardImage>
+            <Badge position='left' size={45} style={{ bottom: 40, left: 25 }} />
+            <ImageContainer>
+              <img src={imageUrl} alt="" />
+            </ImageContainer>
+          </CardImage>
+          <CardImage>
+            <Badge position='right' size={55} style={{ right: -285, bottom: -40 }} />
+            <ImageContainer>
+              <img src={imageUrl} alt="" />
+            </ImageContainer>
+          </CardImage>
+        </Row>
+      </div>
       <CardImage>
         <Badge position='bottom' size={60} style={{ right: -120, bottom: -160  }} />
         <ImageContainer>

@@ -7,8 +7,6 @@ export const Container = styled.div`
 
   margin-top: 40px;
 
-  justify-content: center;
-
   h1 {
     text-transform: uppercase;
   };
@@ -64,6 +62,4 @@ export const Row = styled.div`
   flex: 1;
   display: flex;
   flex-direction: row;
-
-  justify-content: space-between;
 `;

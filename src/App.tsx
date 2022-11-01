@@ -9,6 +9,7 @@ const App:React.FC = () => {
         justifyContent: 'center', 
         padding: 10, 
         fontSize: '3em', 
+        fontWeight: 700,
         textTransform: 'uppercase' 
       }}
     >

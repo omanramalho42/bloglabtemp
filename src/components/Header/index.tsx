@@ -3,7 +3,11 @@ import React, { FC, useEffect, useState } from 'react';
 import { 
   Header as HeaderDiv, 
   Container,
-  Categorie
+  Categorie,
+  Input,
+  ContentFilter,
+  LogoTitle,
+  Logo
 } from './styled';
 
 interface CardCategories {
@@ -64,7 +68,7 @@ const HeaderMenu:React.FC = () => {
   ];
   
   return (
-    <div style={{ marginTop: '60px' }}>
+    <div style={{ marginTop: '20px', marginBottom: '30px' }}>
       <nav>
         <ul 
           style={{ 
@@ -90,11 +94,41 @@ const HeaderMenu:React.FC = () => {
   )
 }
 
+export const SearchFilter = () => {
+  const [text, setText] = useState<string>('');
+  
+  return (
+    <Input 
+      type="submit" 
+      value={text} 
+      onChange={
+        (value: any) => { 
+          console.log(value), 
+          setText(value)
+        }     
+      }
+      placeholder="Pesquisar"
+    >
+
+    </Input>
+  )
+}
+
 const Header:React.FC = () => {
   return (
     <HeaderDiv>
+      
+      <LogoTitle>
+        Laboratório
+        <Logo>Temp</Logo>
+      </LogoTitle>
+
       <Container>
         <CardsCateogories />
+        <ContentFilter>
+          <Input placeholder='Pesquisar' />
+        </ContentFilter>
+        
         <HeaderMenu />
       </Container>
     </HeaderDiv>

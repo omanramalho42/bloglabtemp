@@ -81,8 +81,17 @@ const HeaderMenu:React.FC = () => {
         { menusItems.map(({ categorie, icon, title }, idx) => (
           <>
             <li key={idx}>
-              <a href="" style={{ textDecoration: 'none', margin: '0 5px', color: '#000', fontWeight: '600' }}>{ title }</a>
-              {/* <i>{icon}</i> */}
+              <a 
+                href="" 
+                style={{ 
+                  textDecoration: 'none', 
+                  margin: '0 5px', 
+                  color: '#000', 
+                  fontWeight: '600' 
+                }}
+              >
+                { title }
+              </a>
             </li>
             { idx !== 5 && (
               <hr />

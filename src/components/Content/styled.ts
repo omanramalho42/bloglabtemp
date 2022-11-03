@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  flex: 1;
   display: flex;
   flex-direction: column;
 
+  position: relative;
+  left: -35px;
+  
+  justify-content: flex-start;
   margin-top: 40px;
 
   h1 {
@@ -12,9 +15,6 @@ export const Container = styled.div`
   };
 
   img {
-    display: flex;
-
-    margin: auto;
     width: 100%;
     height: 100%;
     
@@ -23,15 +23,14 @@ export const Container = styled.div`
   `;
 
 export const ImageContainer = styled.div`
-  display: flex;
   padding: 10px;
 
   width: 238px;
   height: 238px;
 
   @media screen and (max-width: 1200px) {
-    width: 180px;
-    height: 180px;  
+    width: 170px;
+    height: 170px;  
   }
 
   border-radius: 50%;
@@ -64,5 +63,6 @@ export const CardImage = styled.div`
 `;
 
 export const Row = styled.div`
+  flex: 1;
   display: flex;
 `;

@@ -9,15 +9,15 @@ export const Container = styled.div`
   
   background-color: #000;
 
-  margin: 10px;
+  margin: 10px 20px;
 
   border-radius: 15px;
 
-  height: 600px;
+  height: 500px;
 
   img {
-    width: 90%;
-    height: 90%;
+    width: 75%;
+    height: 80%;
   }
 `;
 

@@ -1,11 +1,29 @@
-import React from 'react'
-import { Container } from './styled'
+import React, { useEffect, useState } from 'react'
+import { Card, Container } from './styled'
 
 const Galery:React.FC = () => {
+  const [images, setImages] = useState<any[] | null>(null);
+  useEffect(() => {
+    if(images === null) {
+      setImages([
+        { title: '', price: ''},
+        { title: '', price: ''},
+        { title: '', price: ''},
+      ])
+    }
+  },[]);
+
   return (
-    <Container>
+    <>
       <h1>Banca</h1>
-    </Container>
+      <Container>
+        {images?.map((i, idx) => (
+          <Card key={idx}>
+            item
+          </Card>
+        ))}
+</Container>
+    </>
   )
 }
 

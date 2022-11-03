@@ -10,15 +10,18 @@ export const Header = styled.header`
   box-shadow: 0 0 12px 6px rgba(0,0,0,0.1);
 `;
 
-export const Logo = styled.h2`
+export const Logo = styled.h1`
   font-size: 2em;
 `;
 
-export const LogoTitle = styled.h1`
+export const LogoTitle = styled.div`
+  h2 {
+    font-family: 'Poppins', 'Impact', sans-serif;
+  }
+
   position: absolute;
   margin-left: 30px;
   top: 20px;
-  font-family: 'Poppins', 'Impact', sans-serif;
 `;
 
 export const Input = styled.input`

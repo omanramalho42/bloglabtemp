@@ -1,12 +1,22 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  flex: 1;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1rem;
 
-  justify-content: center;
-
+  margin-top: 40px;
   background-color: red;
 
-  margin-top: 20px;
+  padding: 10px;
+`;
+
+export const Card = styled.div`
+  display: flex;
+
+  height: 200px;
+
+  border-radius: 15px;
+
+  background-color: #FFF;
 `;

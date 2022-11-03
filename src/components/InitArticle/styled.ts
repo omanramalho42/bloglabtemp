@@ -73,7 +73,8 @@ export const ImageArticle = styled.div`
 
 export const Image = styled.img`
   display: flex;
-  max-height: 90%;
+  width: 90%;
+  height: 90%;
 
   border-radius: 5px;
   `;

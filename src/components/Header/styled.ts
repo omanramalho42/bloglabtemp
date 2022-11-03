@@ -2,13 +2,10 @@ import styled from "styled-components"
 
 export const Header = styled.header`
   flex: 1;
-  display: flex;
-  flex-direction: row;
 
-  justify-content: space-between;
-
+  justify-content: space-between;  
   align-items: center;
-
+  
   background-color: #FFF;
   box-shadow: 0 0 12px 6px rgba(0,0,0,0.1);
 `;
@@ -18,7 +15,9 @@ export const Logo = styled.h2`
 `;
 
 export const LogoTitle = styled.h1`
-  margin: 0 30px;
+  position: absolute;
+  margin-left: 30px;
+  top: 20px;
   font-family: 'Poppins', 'Impact', sans-serif;
 `;
 

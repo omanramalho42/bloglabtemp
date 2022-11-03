@@ -7,21 +7,21 @@ const Content:React.FC = () => {
   return (
     <Container>
       <CardImage>
-        <Badge position='top' size={65} style={{ right: -250, top: -180 }} />
+        <Badge position='top' size={45} style={{ right: -60, top: -70 }} />
         <ImageContainer>
-          <img src={imageUrl} alt="" style={{ width: 350, height: 350 }} />
+          <img src={imageUrl} alt="" />
         </ImageContainer>
       </CardImage>
       <div style={{ display: 'flex', justifyContent: 'space-around', flex: 1, marginRight: 80, marginLeft: 80 }}>
         <Row>
           <CardImage>
-            <Badge position='left' size={45} style={{ bottom: 40, left: 25 }} />
+            <Badge position='left' size={55} style={{ bottom: 40, left: 35 }} />
             <ImageContainer>
               <img src={imageUrl} alt="" />
             </ImageContainer>
           </CardImage>
           <CardImage>
-            <Badge position='right' size={55} style={{ right: -285, bottom: -40 }} />
+            <Badge position='right' size={65} style={{ right: -210, bottom: -20 }} />
             <ImageContainer>
               <img src={imageUrl} alt="" />
             </ImageContainer>
@@ -29,9 +29,9 @@ const Content:React.FC = () => {
         </Row>
       </div>
       <CardImage>
-        <Badge position='bottom' size={60} style={{ right: -120, bottom: -160  }} />
-        <ImageContainer>
-          <img src={imageUrl} alt="" style={{ width: 350, height: 350 }} />
+        <Badge position='bottom' size={50} style={{ right: -180, bottom: -60  }} />
+        <ImageContainer >
+          <img src={imageUrl} alt="" />
         </ImageContainer>
       </CardImage>
     </Container>

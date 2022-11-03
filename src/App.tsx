@@ -9,7 +9,10 @@ import Layout from "./components/Layout";
 
 const App:React.FC = () => {
   return (
-    <Layout title="Home" description="Página inicial">
+    <Layout 
+      title="Home" 
+      description="Página inicial"
+    >
       <Header />
       <InitArticle />
       <HeroSlider />

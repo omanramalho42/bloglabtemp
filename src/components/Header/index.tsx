@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, useCallback, useEffect, useState } from 'react';
 
 import { 
   Header as HeaderDiv, 
@@ -73,8 +73,9 @@ const HeaderMenu:React.FC = () => {
         <ul 
           style={{ 
             display: 'flex', 
-            justifyContent: 'center', 
-            listStyle: 'none'  
+            justifyContent: 'flex-end', 
+            listStyle: 'none',
+            marginTop: '20px'
           }}
         >
         { menusItems.map(({ categorie, icon, title }, idx) => (
@@ -115,14 +116,15 @@ export const SearchFilter = () => {
 }
 
 const Header:React.FC = () => {
+  
   return (
     <HeaderDiv>
-      
+    
       <LogoTitle>
         Laboratório
         <Logo>Temp</Logo>
       </LogoTitle>
-
+  
       <Container>
         <CardsCateogories />
         <ContentFilter>

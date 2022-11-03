@@ -15,21 +15,26 @@ export const Container = styled.div`
     display: flex;
 
     margin: auto;
-
-    width: 238px;
-    height: 238px;
-
+    width: 100%;
+    height: 100%;
+    
     border-radius: 50%;
   };
-`;
+  `;
 
 export const ImageContainer = styled.div`
   display: flex;
   padding: 10px;
 
-  margin: auto;
-  border-radius: 50%;
+  width: 238px;
+  height: 238px;
 
+  @media screen and (max-width: 1200px) {
+    width: 180px;
+    height: 180px;  
+  }
+
+  border-radius: 50%;
   border: 2px solid blue;
 `;
 
@@ -59,7 +64,5 @@ export const CardImage = styled.div`
 `;
 
 export const Row = styled.div`
-  flex: 1;
   display: flex;
-  flex-direction: row;
 `;
